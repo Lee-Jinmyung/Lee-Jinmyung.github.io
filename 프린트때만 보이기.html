@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 프린트떄만 보이기  </title>
+    <style>
+         @media print{
+            #watermark {
+                display: block;
+                color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 300px;
+                margin-left: -150px;
+                border: 2px red solid;
+                text-align: center;
+                -ms-transform: rotate(-20deg); /* IE 9 */
+                -webkit-transform: rotate(-20deg); /* Safari */
+                transform: rotate(-20deg);
+            }
+         }
+        @media screen {#watermark{display:none} }
+    </style>
+</head>
+</head>
+<body>
+<div id="watermark">
+    <h1>Confidential</h1>
+</div>
+
+
+</body>
+</html>
