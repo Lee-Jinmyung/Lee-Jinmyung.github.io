@@ -4,81 +4,79 @@
     <tittle>자기소개서 작성</tittle>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-<style>
-    h1 {
-        background-color: /* Permalink - use to edit and share this gradient:
-        http://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+50,9fd8ef+51,2ab0ed+100;Blue+Gloss+%235 */ background: #e4f5fc; /* Old browsers */
-        background: -moz-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4f5fc', endColorstr='#2ab0ed', GradientType=0); /* IE6-9 */
-        border-radius: 15px;
-        text-shadow: 4px 3px 4px black;
-    }
-    p :hover {color: blueviolet;}
-</style>
+    <style>
+        .navbar {
+            background: gold;
+            margin-bottom: 0;
+            border: 0;
+        }
+        .jumbotron {
+            background: lightpink;
+        }
+        .timecolor{
+            background:yellow;
+            font-weight: bold;
+        }
+        th{
+            background: skyblue;
+        }</style>
+
 </head>
+
 <body>
-<div>
-<div class="alert alert-success">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong> 로딩 완료! </strong> 제 홈페이지에 오신 것을 환영합니다.
-</div>
-<h1 id="메뉴"> 메뉴 </h1>
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">메뉴
-        <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-        <li><a href="#간단한 자기 소개"> 간단한 자기 소개 </a></li>
-        <li><a href="#취미">취미</a></li>
-        <li><a href="#시간표">시간표</a></li>
-    </ul>
-</div>
+<div class="container-fluit">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">소개페이지</a>
+            </div>
+
+            <div class="nav navbar-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">취미</a></li>
+                    <li><a href="#">시간표</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1><span class="glyphicon glyphicon-user"></span>이진명</h1>
+        <p>한성대학교 IT응용시스템공학과 16학번 이진명</p>
     </div>
-<br/>
-    <a href="#메뉴" data-toggle="tooltip" title="낚였습니다">간단한 자기소개 비밀</a>
-<br/>
-<br/>
-<h1 id="간단한 자기소개">간단한 자기소개</h1>
-<p><b> 이름 : 이진명 </b> <p>
-<p> <b> 전공 : 한성대학교 </b> <sub>IT응용시스템공학과</sub></p>
-<img src="다운로드.jpg">
-<p> <b> 사는 곳 : 경기도 구리시 </b> </p>
-<p> <b>나에게 어울리는 음악 : beWhy-중2병 </b> </p>
-<audio src="중2병.mp3" controls="controls"> </audio>
-<p>궁금한 점:
-    <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-search"></span> Search
-    </button>
-</p>
-<a href ="#메뉴"> 메뉴로 돌아가기</a>
-<br/>
-<br/>
-<h1 id="취미"> 취미 </h1>
-<ul>
-    <li> 음악 듣기 </li>
-    <img src="이어폰.jpg">
-    <li> 배드민턴 치기</li>
-    <img src="배드민턴.jpg">
-    <li> 여행가기 </li>
-    <img src="발리.jpg">
-    <i class="fa fa-plane" aria-hidden="true"></i>
-    <br/>
-    <br/>
-    <a href ="#메뉴"> 메뉴로 돌아가기</a>
-</ul>
+</div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1><span class="glyphicon glyphicon-eye-open"></span>소개</h1>
+            <p>1997년 2월 7일 출생<br/>
+                2008년 구지초등학교 졸업<br/>
+                2012년 인창중학교 졸업<br/>
+                2015년 동화고등학교 졸업<br/>
+                2016년 3월 서울 한성대학교 입학<br/>
+               </p>
+        </div>
+        <div class="col-sm-6">
+            <h1><span class="glyphicon glyphicon-link"></span>취미</h1>
+            <p>음악듣기</p>
+            <img src="이어폰.jpg" width="300"><br/>
+            <p>배드민턴 치기</p>
+            <img src="배드민턴.jpg" width="300"><br/>
+            <p>여행가기</p>
+            <img src="발리.jpg" width="300"><br/>
+        </div>
+        </div>
+<div class="row">
+    <div class="col-sm-6">
+        <h1><span class="glyphicon glyphicon-pencil"> </span>수업시간표</h1>
+
 <br/>
 <br/>
-<h1 id="시간표"> 시간표 </h1>
 <p><b> 2016년 1학기 과목 </b></p>
 <ul>
     <li>C프로그래밍 (조혜경 교수님) </li>
@@ -171,11 +169,6 @@
     </tr>
     </tbody>
 </table>
-<br/>
-<br/>
-<
-<a href ="#메뉴"> 메뉴로 돌아가기</a>
-<hr/>
 <br/>
 </body>
 </html>
