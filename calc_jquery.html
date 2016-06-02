@@ -16,47 +16,46 @@
 
         function button_click() {
             var num = $(this).text(); //this.textContent;
-            var newval = $("#text_display").val() + num;
-            $("#text_display").val(newval);
+            var newval = $('#text_display').val() + num;
+            $('#text_display').val(newval);
 
             display_debug();
         }
 
         function button_plus() {
-            var text = $("#text_display"); // TODO: to jQuery
-            first_val = parseInt(text.val()); // TODO: to jQuery
-            text.val() = ''; // TODO: to jQuery
+            var text = $("#text_display");
+            first_val = parseInt(text.val());
+            text.val('');
             operand = 'plus';
 
             display_debug();
         }
 
         function button_equal() {
-            var text = $("#text_display");  // TODO: to jQuery
-            var second_val = parseInt(text.val()); // TODO: to jQuery
+            var text = $("#text_display");
+            var second_val = parseInt(text.val());
             if (operand == 'plus') {
-                text.val('' + (first_val + second_val)); // TODO: to jQuery
+                text.val('' + (first_val + second_val));
             }
-            operand = text.val();
+            operand = '';
 
             display_debug();
         }
 
         function button_clear() {
-            var text = $("#text_display"); // TODO: to jQuery
-            text.val() = ''; // TODO: to jQuery
-            operand = 'clear';
+            var text = $("#text_display");
+            text.val('');
+            operand = '';
 
             display_debug();
         }
 
         $(document).ready(function () {
             $(".num_btn").click(button_click);
-
             $('#btn_plus').click(button_plus);
+            $('#btn_equal').click(button_equal);
+            $('#btn_clear').click(button_clear);
 
-            $("#btn_equal").click(button_equal); // TODO: to jQuery
-            $("#btn_clear").click( button_clear); // TODO: to jQuery
         });
     </script>
 </head>
